@@ -1,0 +1,23 @@
+#services:
+1. Mobile App Develpoment
+2. Web Development
+3. Enterprisr Software Development
+4. Custom Software Development
+5. Sotware Architecture Design
+6. IT Consultancy
+
+#technologies:
+1. Internet of Things
+2. UI/UX Design
+3. Blockchain Development
+4. Artifical Intelligence
+5. Augmented Reality Slutions
+6. Cloud Computing
+
+#Industries:
+1. Healthcare
+2. Retail & ECommerce
+3. Construction
+4. TRavel & Hospitality
+5. Sports & Teams
+6. FinTech
