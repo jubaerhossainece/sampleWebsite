@@ -28,11 +28,12 @@ html {
 }
 
 :root{
-	--color: #554bef;
+	--color: #1806b9;
 	--deep-color: #d02350;
 	--deep-red-hover: #f71c4b;
 	--blue: #554bef;
 	--blue-hover: #1d0ff9;
+    --blue-different: #1806b9;
 }
 
 *:hover,*:active, *:focus{
@@ -54,17 +55,73 @@ ol, ul{
 }
 
 h2{
-	color: #484848;
+	color: #2c4964;
 	font-size: 32px;
 	font-weight: 600;
 	text-transform: uppercase;
     padding-bottom: 1rem;
 }
 
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #5846f9;
+  border-top-color: #e7e4fe;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 header{
-	width: 100%;
-	background: black;
-	position: fixed;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    box-shadow: 0 0 20px 0px rgba(24, 6, 185, 0.05);
+    transition: 0.5s ease-in-out;
+}
+
+#header.header-scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 4px 0;
 }
 
 .header{
@@ -210,7 +267,7 @@ nav > .options > ul > li:hover .submenu{
 	transform: scaleX(1);
 }
 
-.submenu li:first-child:hover .sub-submenu{
+.submenu li:first-child .sub-submenu{
 	top: -3px;
 }
 
@@ -296,7 +353,7 @@ nav > .options > ul > li:hover .submenu{
     left: 0;
     top: 0;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 #hero-slider .carousel-content{
@@ -613,8 +670,17 @@ nav > .options > ul > li:hover .submenu{
 	align-items: center;
 }
 
-#services .tab-pane .top-section{
-	padding: 10px;
+#services .tab-pane .top-section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+   /* margin-bottom: 2rem;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#servicesTabContent .top-section img {
+    height: 5rem;
 }
 
 #services .tab-pane .bottom-section {
@@ -755,7 +821,7 @@ nav > .options > ul > li:hover .submenu{
 	outline: none !important;
 	border-radius: 3px !important;
 	box-shadow: none !important;
-    padding: 19px 13px;
+    padding: 21px 13px;
 }
 
 #contact textarea, #contact-page textarea{
@@ -789,9 +855,18 @@ nav > .options > ul > li:hover .submenu{
     background-color: #1e1e1e;
 }
 
-footer#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .footer-top .col-md-2, #footer  .footer-top .col-sm-6 {
+#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .footer-top .col-md-2, #footer  .footer-top .col-sm-6 {
     display: flex;
     justify-content: center;
+}
+
+#footer .footer-top div#contacts-footer p {
+    color: #f1e5e5;
+}
+
+#footer .footer-top div#contacts-footer strong {
+    font-weight: 600;
+    color: white;
 }
 
 #footer .platforms-footer{
@@ -835,7 +910,7 @@ div#contacts-footer h3 {
 }
 
 #contacts-footer p, #contacts-footer a {
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff99;
 }
 
@@ -929,7 +1004,7 @@ div#contacts-footer h3 {
 }
 
 #footer .arrow {
-    border: solid var(--color);
+    border: solid #2836f5;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
@@ -938,17 +1013,19 @@ div#contacts-footer h3 {
 /*--------------------------------------------------
 ##contact us page
 ---------------------------------------------------*/
+#breadcrumbs{
+    margin-top: 70px;
+    height: 5rem;
+    background-color: var(--color);
+}
+
 section#contact-page{
     background-color: #f7f7f7;
     padding: 3rem 5rem;
 }
 
 #contact-page .col-md-10.contact-info {
-    background-color: #fff;
     margin-bottom: 20px;
-    padding: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
 #contact-page .contact-content {
@@ -958,11 +1035,41 @@ section#contact-page{
     box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
-#contact-page .contact-info .col-md-4{
+#contact-page .contact-info .col-md-4:first-child{
+    padding-left: 0;
+}
+
+#contact-page .contact-info .col-md-4:last-child{
+    padding-right: 0;
+}
+
+.location, .phone, .email {
+    background-color: white;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
 }
+
+#contact-page .location i, #contact-page .phone i, #contact-page .email i {
+    font-size: 45px;
+    color: var(--color);
+}
+
+#contact-page .contact-info .col-md-4 strong{
+    color: #2c4964;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+#contact-page .contact-info .col-md-4 p{
+    margin-bottom: 0;
+}
+
 
 /*Scroll to top button styling*/
 #topScrollBtn {
@@ -981,7 +1088,7 @@ section#contact-page{
 }
 
 #topScrollBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: var(--blue-hover); /* Add a dark-grey background on hover */
 }
 
 #topScrollBtn .arrow {

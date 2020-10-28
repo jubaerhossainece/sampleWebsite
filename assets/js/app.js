@@ -1,3 +1,27 @@
+  // Preloader
+  $(window).on('load', function() {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
+  });
+
+
+//header scroll change
+$(window).scroll(function() {
+  if($(this).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
+  } else {
+    $('#header').removeClass('header-scrolled');
+  }
+});
+
+if($(window).scrollTop() > 100) {
+  $('#header').addClass('header-scrolled');
+}
+
+
 //ham burger menu icon toggle
 function myFunction(x) {
   x.classList.toggle("change");
@@ -69,7 +93,7 @@ $(window).scroll(function(){
 $('#topScrollBtn').click(function(){
   $('html, body').animate({
     scrollTop: 0
-  }, 1000, 'swing');
+  }, 1000, 'easeInOutExpo');
   return false;
 });
 

@@ -314,7 +314,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/ambulance.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Healthcare</h6>
@@ -327,7 +327,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/order.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Retail & ECommerce</h6>
@@ -340,7 +340,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/architect.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Construction</h6>
@@ -353,7 +353,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/globe.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Travel & Hospitality</h6>
@@ -366,7 +366,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/football.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Sports & Teams</h6>
@@ -379,7 +379,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/ambulance.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Garments</h6>
@@ -396,7 +396,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/software-developer.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Enterprise Software Development</h6>
@@ -409,7 +409,7 @@
 				  			<a href="" class="services-link ">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/mobile-app.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>Mobile App Develpoment</h6>
@@ -422,7 +422,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/user-interface.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>UI/UX design</h6>
@@ -435,7 +435,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/technical-support.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>IT Consultancy</h6>
@@ -448,7 +448,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/qa.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>QA & Testing</h6>
@@ -461,7 +461,7 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/server.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
 						  				<h6>DevOps</h6>
@@ -478,10 +478,10 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/intelligence.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
-						  				<h6>Healthcare</h6>
+						  				<h6>Internet of Things</h6>
 						  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae maxime dignissimos quis corrupti obcaecati illum ad sapiente dolores tempora.</p>
 						  			</div>
 					  			</div>
@@ -491,10 +491,10 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/ui-design.png" alt="">.
 						  			</div>
 						  			<div class="bottom-section">
-						  				<h6>Retail & ECommerce</h6>
+						  				<h6>UI/UX Design</h6>
 						  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae maxime dignissimos quis corrupti obcaecati illum ad sapiente dolores tempora.</p>
 						  			</div>
 					  			</div>
@@ -504,10 +504,10 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/tablet.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
-						  				<h6>Construction</h6>
+						  				<h6>Blockchain Development</h6>
 						  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae maxime dignissimos quis corrupti obcaecati illum ad sapiente dolores tempora.</p>
 						  			</div>
 					  			</div>
@@ -517,10 +517,10 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/brain.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
-						  				<h6>Travel & Hospitality</h6>
+						  				<h6>Artifical Intelligence</h6>
 						  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae maxime dignissimos quis corrupti obcaecati illum ad sapiente dolores tempora.</p>
 						  			</div>
 					  			</div>
@@ -530,10 +530,10 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/augmented-reality.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
-						  				<h6>Sports & Teams</h6>
+						  				<h6>Augmented Reality Slutions</h6>
 						  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae maxime dignissimos quis corrupti obcaecati illum ad sapiente dolores tempora.</p>
 						  			</div>
 					  			</div>
@@ -543,10 +543,10 @@
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
-						  				Lorem, ipsum.
+						  				<img src="assets/icons/services/cloud-intelligence.png" alt="">
 						  			</div>
 						  			<div class="bottom-section">
-						  				<h6>Garments</h6>
+						  				<h6>Cloud Computing</h6>
 						  				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae maxime dignissimos quis corrupti obcaecati illum ad sapiente dolores tempora.</p>
 						  			</div>
 					  			</div>
@@ -680,9 +680,9 @@
 	    							Bangladesh
 	    							<br>
 	    							<br>
-	    							Phone: +8801754633041
+	    							<strong>Phone:</strong> +8801754633041
 	    							<br>
-	    							Email: jubaerkuet@gmail.com
+	    							<strong>Email:</strong> jubaerkuet@gmail.com
 	    						</p>
 	    						<p></p>
 	    					</div>
@@ -744,6 +744,7 @@
     	</footer>
 
     	<a href="#" id="topScrollBtn"><i class="arrow up"></i></a>
+    	<div id="preloader"></div>
 
        
      <!-- Vendor JS files -->
