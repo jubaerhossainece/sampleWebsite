@@ -38,10 +38,9 @@
     <body>
     	<!-- Header -->
     	<header id="header" class="fixed-top">
-    		<!-- <div class=" header-contact">
-    			
+    		<!-- <div class=" header-contact">	
     		</div> -->
-    		<div class=" header d-flex align-items-center">
+    		<div class="header d-flex align-items-center">
     			<div class="">
     				<strong class="logo mr-auto"><a href="index.php">Logo</a></strong>
     			</div>
@@ -202,14 +201,10 @@
 	    		</div>
 
 				<div class="row">
-    				<div class="col-md-4 col-sm-6">
-    					<div class="about-card" data-aos="fade-up" data-aos-delay="200">
+    				<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+    					<div class="about-card">
 	    					<div class="img">
-	    						<img src="assets/images/about-card1.jpg" alt="" class="img-fluid">
-		    					<div class="about-card-icon">
-		    						
-		    						<img src="assets/icons/speedometer.svg" alt="">
-		    					</div>
+	    						<img src="assets/icons/speedometer.svg" alt="">
 	    					</div>
 	    					<h4>our mission</h4>
 	    					<p><?php
@@ -226,13 +221,10 @@
 								?></p>
     					</div>
     				</div>
-    				<div class="col-md-4 col-sm-6">
-    					<div class="about-card" data-aos="fade-up" data-aos-delay="400">
+    				<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+    					<div class="about-card">
 	    					<div class="img">
-	    						<img src="assets/images/about-card2.jpg" alt="" class="img-fluid">
-		    					<div class="about-card-icon plan">
-		    						<img src="assets/icons/planning.svg" alt="">
-		    					</div>
+	    						<img class="plan-icon" src="assets/icons/planning.svg" alt="">
 	    					</div>
 	    					<h4>our plan</h4>
 	    					<p><?php
@@ -249,13 +241,10 @@
 								?></p>
     					</div>
     				</div>
-    				<div class="col-md-4 col-sm-6">
-    					<div class="about-card" data-aos="fade-up" data-aos-delay="600">
+    				<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+    					<div class="about-card">
 	    					<div class="img">
-	    						<img src="assets/images/about-card3.jpg" alt="" class="img-fluid">
-		    					<div class="about-card-icon">
-		    						<img src="assets/icons/binoculars.svg" alt="">
-		    					</div>
+	    						<img src="assets/icons/binoculars.svg" alt="">
 	    					</div>
 	    					<h4>our vision</h4>
 	    					<p><?php
@@ -632,8 +621,39 @@
     						<h2>Contact Us</h2>
     					</div>
     				</div>
-    				<div class="col-md-10 col-sm-12">	
-    					<div class="contact-content" data-aos="fade-up">
+    				<div class="col-md-12 col-lg-6 contact-info">
+    					<div class="row">
+    						<div class="col-md-12 location-section" data-aos="fade-up" data-aos-delay="100">
+			                  <div class="location">
+			                    <i class="fas fa-map-marker-alt"></i>
+			                    <!-- <img src="../assets/icons/contact/placeholder.png" alt="Location"> -->
+			                    <strong>Location:</strong>
+			                    <p>Babar Street, Mohammadpur, Dhaka-1207<br> Bnagladesh</p>                    
+			                  </div>
+    						</div>
+
+			                <div class="col-md-6 email-section">
+			                  <div class="email" data-aos="fade-up" data-aos-delay="200">
+			                    <i class="fas fa-envelope"></i>
+			                    <!-- <img src="../assets/icons/contact/message.png" alt="Location"> -->
+			                    <strong>Email:</strong>
+			                    <p>mayan@company.com</p>                    
+			                  </div>
+			                </div>
+
+			                <div class="col-md-6 phone-section">
+			                  <div class="phone" data-aos="fade-up" data-aos-delay="300">
+			                    <i class="fas fa-phone"></i>
+			                    <!-- <img src="../assets/icons/contact/phone-ringing.png" alt="Location"> -->
+			                    <strong>Phone:</strong>
+			                    <p>+8801754633041</p>                    
+			                  </div>
+			                </div>
+              			</div>
+    				</div>
+
+    				<div class="col-md-12 col-lg-6 message" data-aos="fade-up" data-aos-delay="200">	
+    					<div class="contact-content">
     						<form action="">
     							<div class="form-row">
     								<div class="col-md-6 form-group">

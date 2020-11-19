@@ -112,21 +112,19 @@ h2{
 
 
 header{
+    transition: all 0.5s ease-in-out;
     width: 100%;
-    background: transparent;
-    position: fixed;
-    box-shadow: 0 0 20px 0px rgba(24, 6, 185, 0.05);
-    transition: 0.5s ease-in-out;
+    z-index: 9999;
+    padding: 20px 0;
 }
 
 #header.header-scrolled {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 4px 0;
+    background: rgba(86, 58, 250, 0.9);
+    padding: 13px 0;
 }
 
-.header{
-	padding: 0 2rem;
-	height: 70px;
+#header .header{
+    padding: 0 3rem;
 }
 
 .header-contact{
@@ -159,7 +157,7 @@ nav > .options > ul > li{
 }
 
 nav > .options > ul > li > a {
-	padding: 28px 1rem;
+	padding: 12px 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -198,7 +196,7 @@ nav > .options > ul > li:hover .submenu{
 } 
 
 .submenu{
-	top: 72px;
+	top: 42px;
 	padding: 0px;
 	margin: 0;
 	border-top: none;
@@ -352,7 +350,7 @@ nav > .options > ul > li:hover .submenu{
     height: 100%;
     left: 0;
     top: 0;
-    background-color: black;
+    background-color: var(--color);
     opacity: 0.2;
 }
 
@@ -504,15 +502,32 @@ nav > .options > ul > li:hover .submenu{
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgb(217, 217, 222, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2rem 1.5rem 2rem;
 }
 
 .about-card .img {
     position: relative;
     margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
 }
 
 .about-card .img img{
 	border-radius: 5px 5px 0 0;
+    height: 6rem;
+}
+
+.about-card img.plan-icon {
+    width: 5rem;
 }
 
 .about-card-icon {
@@ -528,38 +543,14 @@ nav > .options > ul > li:hover .submenu{
     transition: 0.3s;
 }
 
-.about-card-icon i{
-	font-size: 40px;
-	line-height: 1;
-	color: white;
-	transition: 0.3s;
-	position: absolute;
-	top: 8px;
-	left: 9px;
-}
-
-.about-card-icon img{
-	width: 42px;
-    height: 42px;
-    position: absolute;
-    top: 4px;
-    left: 7px;
-}
-
-.about-card-icon.plan img {
-    width: 42px;
-    height: 32px;
-    position: absolute;
-    top: 10px;
-}
-
 .about-card h4 {
     text-align: center;
     color: #292929;
 }
 
 .about-card p{
-	padding: 0 25px 25px 25px;
+    font-size: 15px;
+    text-align: center;
 }
 
 
@@ -601,6 +592,16 @@ nav > .options > ul > li:hover .submenu{
 
 #services .nav-item{
 	width: 33.3333333%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#services .nav-item:first-child{
+    padding-left: 0;
+}
+
+#services .nav-item:last-child{
+    padding-right: 0;
 }
 
 #services .nav-item .nav-link{
@@ -614,7 +615,7 @@ nav > .options > ul > li:hover .submenu{
     transition: 0.3s;
     padding: 13px 0;
     border: 0;
-	border-bottom: 3px solid transparent;
+	border-bottom: 3px solid #5d5d5dfa;
 }
 
 #services .nav-link.active {
@@ -806,15 +807,40 @@ nav > .options > ul > li:hover .submenu{
 	padding: 3rem 5rem;
 }
 
+#contact .contact-info > .row{
+    height: 100%;
+}
+
+#contact .location-section{
+    margin-bottom: 1rem;
+}
+
+#contact .location i, #contact .phone i, #contact .email i {
+    font-size: 45px;
+    color: var(--color);
+    margin-bottom: 1rem;
+}
+
+#contact .message .contact-content{
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
 #contact .contact-content{
 	margin-top: 10px;
 }
 
-#contact .row{
-	background-color: #fff;
+#contact .contact-info {
+    margin-top: 10px;
+}
+
+#contact > .row{
+	/*background-color: #fff;*/
 	padding: 2rem 0;
 	border-radius: 5px;
-	box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
+	/*box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);*/
 }
 
 #contact input, #contact-page input{
@@ -850,9 +876,17 @@ nav > .options > ul > li:hover .submenu{
 }
 
 /*footer design*/
+#footer{
+    background: linear-gradient(90deg, rgba(86, 58, 250, 0.9) 0%, 
+        rgba(116, 15, 214, 0.9) 100%), 
+        url("../images/paralax2(medium).jpg") center center no-repeat;
+    background-size: cover; 
+}
+
 #footer .footer-top {
     padding: 4rem 5rem;
-    background-color: #1e1e1e;
+    /*background-color: #1e1e1e;*/
+           
 }
 
 #footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .footer-top .col-md-2, #footer  .footer-top .col-sm-6 {
@@ -915,7 +949,7 @@ div#contacts-footer h3 {
 }
 
 #footer .footer-bottom{
-	background-color: #111;
+	background-color: rgb(24 6 185 / 53%);
     padding: 1rem 5rem;
 }
 
@@ -953,6 +987,7 @@ div#contacts-footer h3 {
 #footer .footer-bottom a i{ 
     margin-top: 9px;
     font-size: 15px;
+    transition: 0.3s;
 }
 
 #footer .footer-bottom a i.fa-facebook-f{
@@ -998,13 +1033,13 @@ div#contacts-footer h3 {
 }
 
 
-#footer i{
+#footer i.arrow {
     margin-bottom: 1px;
     margin-right: 5px;
 }
 
 #footer .arrow {
-    border: solid #2836f5;
+    border: solid #ffffff99;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
@@ -1014,7 +1049,7 @@ div#contacts-footer h3 {
 ##contact us page
 ---------------------------------------------------*/
 #breadcrumbs{
-    margin-top: 70px;
+    margin-top: 82px;
     height: 5rem;
     background-color: var(--color);
 }
@@ -1024,7 +1059,7 @@ section#contact-page{
     padding: 3rem 5rem;
 }
 
-#contact-page .col-md-10.contact-info {
+#contact-page .contact-info {
     margin-bottom: 20px;
 }
 
@@ -1035,11 +1070,11 @@ section#contact-page{
     box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
-#contact-page .contact-info .col-md-4:first-child{
+#contact-page .contact-info .col-md-6:first-child{
     padding-left: 0;
 }
 
-#contact-page .contact-info .col-md-4:last-child{
+#contact-page .contact-info .col-md-3:last-child{
     padding-right: 0;
 }
 
@@ -1058,6 +1093,7 @@ section#contact-page{
 #contact-page .location i, #contact-page .phone i, #contact-page .email i {
     font-size: 45px;
     color: var(--color);
+    margin-bottom: 1rem;
 }
 
 #contact-page .contact-info .col-md-4 strong{
