@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 200px) and (max-width: 768px) {
+@media only screen and (min-width: 200px) and (max-width: 991px) {
   .ham-burger {
   display: inline-block;
   cursor: pointer;
@@ -284,7 +284,7 @@ footer#footer .footer-top .col-sm-6 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
 
 #header .header{
   padding: 0 1rem;
@@ -378,8 +378,21 @@ footer#footer .footer-top .col-sm-6 {
 	padding: 25px 10px;
 }
 
-.about-card p{
-	padding: 0 15px 15px 15px;
+#about-us .about-card{
+  padding: 30px 10px 10px 10px;
+}
+
+#about-us .about-card .img img{
+  height: 4rem;
+}
+
+#about-us .about-card .img{
+  height: 6rem;
+  width: 6rem;
+}
+
+#about-us .about-card p{
+	padding: 0;
 }
 
 

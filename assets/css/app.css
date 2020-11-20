@@ -5,7 +5,7 @@
 #b82419
 #e20147
 #ed1c24(orange-red)
-#d02350
+#d02350(deep red)
 */
 
 /*Blue*/
@@ -17,18 +17,31 @@
 /*#1D169d*/
 
 /*Green*/
-/*#1f8c38*/
+/*#1f8c38
+#18d26e*/
 
 /*indigo*/
 /*#4B0082*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root{
-	--color: #d02350;
-	--blue-color: #554bef;
+	--color: #1806b9;
+	--deep-color: #d02350;
+	--deep-red-hover: #f71c4b;
+	--blue: #554bef;
+	--blue-hover: #1d0ff9;
+    --blue-different: #1806b9;
 }
 
 *:hover,*:active, *:focus{
 	outline: none !important;
+}
+
+*:active{
+	background-color: none;
 }
 
 body{
@@ -42,22 +55,76 @@ ol, ul{
 }
 
 h2{
-	color: #484848;
+	color: #2c4964;
 	font-size: 32px;
 	font-weight: 600;
 	text-transform: uppercase;
     padding-bottom: 1rem;
 }
 
-header{
-	width: 100%;
-	background: black;
-	position: fixed;
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
 }
 
-.header{
-	padding: 0 2rem;
-	height: 70px;
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #5846f9;
+  border-top-color: #e7e4fe;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+header{
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px 0;
+}
+
+#header.header-scrolled {
+    background: rgba(86, 58, 250, 0.9);
+    padding: 13px 0;
+}
+
+#header .header{
+    padding: 0 3rem;
 }
 
 .header-contact{
@@ -86,11 +153,11 @@ nav > .options > ul > li{
 	list-style: none;
 	display: inline-block;
 	position: relative;
-	transition: 0.3s;
+	/*transition: 0.3s;*/
 }
 
 nav > .options > ul > li > a {
-	padding: 28px 1rem;
+	padding: 12px 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -125,23 +192,24 @@ nav > .options > ul > li:hover > a > .arrow{
 }
 
 nav > .options > ul > li:hover .submenu{
-	transform: scaleY(1);
+	/*transform: scaleY(1);*/
 } 
 
 .submenu{
-	top: 72px;
+	top: 42px;
 	padding: 0px;
 	margin: 0;
 	border-top: none;
-	transform: scaleY(0);
+	display: none;
+	/*transform: scaleY(0);*/
 }
 
 .submenu, .sub-submenu {
 	width: 15rem;
 	background-color: white;
 	position: absolute;
-	transition: 0.5s;
-	transform-origin: top;
+	/*transition: 0.5s;
+	transform-origin: top;*/
 	box-shadow: 0px 0px 14px 0px rgba(75, 0, 130, 0.3);
 	border-radius: 0 0 4px 4px;
 }
@@ -197,7 +265,7 @@ nav > .options > ul > li:hover .submenu{
 	transform: scaleX(1);
 }
 
-.submenu li:first-child:hover .sub-submenu{
+.submenu li:first-child .sub-submenu{
 	top: -3px;
 }
 
@@ -257,7 +325,7 @@ nav > .options > ul > li:hover .submenu{
 }
 
 .contact-us a:hover{
-	background-color: #f71c4b;
+	background-color: var(--blue-hover);
 }
 
 
@@ -282,8 +350,8 @@ nav > .options > ul > li:hover .submenu{
     height: 100%;
     left: 0;
     top: 0;
-    background-color: black;
-    opacity: 0.5;
+    background-color: var(--color);
+    opacity: 0.2;
 }
 
 #hero-slider .carousel-content{
@@ -301,6 +369,10 @@ nav > .options > ul > li:hover .submenu{
 	font-size: 2.5rem;
 }
 
+#hero-slider .carousel-content p {
+    font-size: 20px;
+}
+
 #hero-slider .btn-learn-more {
     background-color: var(--color);
     color: white;
@@ -308,6 +380,7 @@ nav > .options > ul > li:hover .submenu{
     border-radius: 20px !important;
     transition: 0.5s !important;
     font-weight: 500;
+    margin-top: 1.5rem;
 }
 
 #hero-slider .btn-learn-more:hover{
@@ -323,9 +396,9 @@ nav > .options > ul > li:hover .submenu{
 }
 
 #hero-slider a.carousel-control-prev{
-	background-color: #100f0f !important;
-    height: 65px;
-    width: 60px;
+	background-color: #ffffff33 !important;
+    height: 55px;
+    width: 54px;
     border-radius: 4px;
     position: absolute;
     top: 50%;
@@ -344,9 +417,9 @@ nav > .options > ul > li:hover .submenu{
 }
 
 #hero-slider a.carousel-control-next{
-	background-color: #100f0f  !important;
-    height: 65px;
-    width: 60px;
+	background-color: #ffffff33  !important;
+    height: 55px;
+    width: 54px;
     border-radius: 4px;
     position: absolute;
     top: 50%;
@@ -360,15 +433,26 @@ nav > .options > ul > li:hover .submenu{
 	background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
+
+
+#hero-slider a.carousel-control-next:focus, #hero-slider a.carousel-control-prev:focus{
+	background-color: #ffffff33 !important;
+}
+
+
 #hero-slider a.carousel-control-next .right{
 	margin-right: 13px;
 }
 
+.carousel-indicators {
+    bottom: 15px;
+}
+
 #hero-slider .carousel-indicators li{
-	width: 12px;
-	height: 11px;
-	margin-left: 6px;
-	margin-right: 6px;
+	width: 11px;
+	height: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /*about us section*/
@@ -418,15 +502,32 @@ nav > .options > ul > li:hover .submenu{
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgb(217, 217, 222, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2rem 1.5rem 2rem;
 }
 
 .about-card .img {
     position: relative;
     margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
 }
 
 .about-card .img img{
 	border-radius: 5px 5px 0 0;
+    height: 6rem;
+}
+
+.about-card img.plan-icon {
+    width: 5rem;
 }
 
 .about-card-icon {
@@ -442,38 +543,14 @@ nav > .options > ul > li:hover .submenu{
     transition: 0.3s;
 }
 
-.about-card-icon i{
-	font-size: 40px;
-	line-height: 1;
-	color: white;
-	transition: 0.3s;
-	position: absolute;
-	top: 8px;
-	left: 9px;
-}
-
-.about-card-icon img{
-	width: 42px;
-    height: 42px;
-    position: absolute;
-    top: 4px;
-    left: 7px;
-}
-
-.about-card-icon.plan img {
-    width: 42px;
-    height: 32px;
-    position: absolute;
-    top: 10px;
-}
-
 .about-card h4 {
     text-align: center;
     color: #292929;
 }
 
 .about-card p{
-	padding: 0 15px 15px 15px;
+    font-size: 15px;
+    text-align: center;
 }
 
 
@@ -488,12 +565,12 @@ nav > .options > ul > li:hover .submenu{
 
 #services .services-top{
 	padding-bottom: 2rem;
-    background-color: white;
+    /*background-color: white;*/
     padding: 2rem;
     margin-bottom: 1rem;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 5px 15px 0 rgb(217, 217, 222, 0.7);
+    /*box-shadow: 0 5px 15px 0 rgb(217, 217, 222, 0.7);*/
 }
 
 #services .services-tabs{
@@ -504,44 +581,52 @@ nav > .options > ul > li:hover .submenu{
 	border: none;
 }
 
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    /* border-color: #e9ecef #e9ecef #dee2e6; */
+    border-color: transparent;
+}
+
 #services .nav{
 	justify-content: center;
 }
 
 #services .nav-item{
 	width: 33.3333333%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#services .nav-item:first-child{
+    padding-left: 0;
+}
+
+#services .nav-item:last-child{
+    padding-right: 0;
 }
 
 #services .nav-item .nav-link{
-	border: 1px solid #f3f3f3;
-}
-
-#services .nav-item:first-child .nav-link{
-	border-radius: 5px 0 0 0;
-}
-
-#services .nav-item:last-child .nav-link{
-	border-radius: 0 5px 0 0 ;
-}
-
-#services .nav-link {
 	text-align: center;
 	color: #5d5d5d;
     width: 100%;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 0;
+    border-radius: 5px 5px 0 0;
     transition: 0.3s;
     padding: 13px 0;
-    background-color: white;
+    border: 0;
+	border-bottom: 3px solid #5d5d5dfa;
 }
 
-#services .nav-link.active{
-	background-color: var(--color);
-	border: 1px solid var(--color) !important;
-	color: white;
-} 
+#services .nav-link.active {
+    color: var(--color);
+    border: transparent;
+    border-bottom: 3px solid var(--color);
+}
+
+#services .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	background-color: transparent;
+}
 
 
 #services #servicesTabContent .col-lg-4, #services #servicesTabContent
@@ -569,7 +654,7 @@ nav > .options > ul > li:hover .submenu{
 #services .tab-pane .services-link:hover{
 	background-color: white;
     box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.15);
-    transform: scale(1.06);
+    transform: scale(1.02);
 }
 
 #services .tab-pane .services-link h6 {
@@ -586,8 +671,17 @@ nav > .options > ul > li:hover .submenu{
 	align-items: center;
 }
 
-#services .tab-pane .top-section{
-	padding: 10px;
+#services .tab-pane .top-section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+   /* margin-bottom: 2rem;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#servicesTabContent .top-section img {
+    height: 5rem;
 }
 
 #services .tab-pane .bottom-section {
@@ -609,9 +703,22 @@ nav > .options > ul > li:hover .submenu{
 	padding: 3rem 5rem;
 }
 
-#clients .heading-client h2{
-	text-align: center;
-	padding-bottom: 2rem;
+/*#clients .heading-client*/ h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/*#clients .heading-client*/ h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color);
+    bottom: 0;
+    left: calc(50% - 25px);
 }
 
 #clients .content-client{
@@ -622,7 +729,7 @@ nav > .options > ul > li:hover .submenu{
 #clients .owl-item{
 	display: flex;
     justify-content: center;
-	padding: 3rem 0;
+	padding: 10px 0;
 }
 
 #clients .client-item{
@@ -693,15 +800,107 @@ nav > .options > ul > li:hover .submenu{
   padding: 9px;
 }
 
-/*footer design*/
-#footer .footer-top {
-    padding: 4rem 5rem;
-    background-color: #1e1e1e;
+
+/*contact us section*/
+#contact{
+	background-color: #f7f7f7;
+	padding: 3rem 5rem;
 }
 
-footer#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .footer-top .col-md-2, #footer  .footer-top .col-sm-6 {
+#contact .contact-info > .row{
+    height: 100%;
+}
+
+#contact .location-section{
+    margin-bottom: 1rem;
+}
+
+#contact .location i, #contact .phone i, #contact .email i {
+    font-size: 45px;
+    color: var(--color);
+    margin-bottom: 1rem;
+}
+
+#contact .message .contact-content{
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+#contact .contact-content{
+	margin-top: 10px;
+}
+
+#contact .contact-info {
+    margin-top: 10px;
+}
+
+#contact > .row{
+	/*background-color: #fff;*/
+	padding: 2rem 0;
+	border-radius: 5px;
+	/*box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);*/
+}
+
+#contact input, #contact-page input{
+	outline: none !important;
+	border-radius: 3px !important;
+	box-shadow: none !important;
+    padding: 21px 13px;
+}
+
+#contact textarea, #contact-page textarea{
+	outline: none !important;
+	border-radius: 3px !important;
+	box-shadow: none !important;
+    padding: 7px 13px;
+}
+
+#contact input:focus, #contact textarea:focus,
+#contact-page input:focus, #contact-page textarea:focus
+{
+	border: 1px solid var(--color);
+}
+
+#contact .contactBtn, #contact-page .contactBtn {
+    border: none;
+    padding: 8px 15px;
+    background-color: var(--color);
+    color: white;
+    transition: 0.5s;
+}
+
+#contact .contactBtn:hover, #contact-page .contactBtn:hover {
+    background-color: var(--blue-hover);
+}
+
+/*footer design*/
+#footer{
+    background: linear-gradient(90deg, rgba(86, 58, 250, 0.9) 0%, 
+        rgba(116, 15, 214, 0.9) 100%), 
+        url("../images/paralax2(medium).jpg") center center no-repeat;
+    background-size: cover; 
+}
+
+#footer .footer-top {
+    padding: 4rem 5rem;
+    /*background-color: #1e1e1e;*/
+           
+}
+
+#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .footer-top .col-md-2, #footer  .footer-top .col-sm-6 {
     display: flex;
     justify-content: center;
+}
+
+#footer .footer-top div#contacts-footer p {
+    color: #f1e5e5;
+}
+
+#footer .footer-top div#contacts-footer strong {
+    font-weight: 600;
+    color: white;
 }
 
 #footer .platforms-footer{
@@ -715,6 +914,15 @@ footer#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .foo
 #footer .footer-top h4{
 	color: white;
 	margin-bottom: 20px;
+	font-size: 19px;
+}
+
+div#contacts-footer h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 17px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #footer .footer-top a{
@@ -723,21 +931,25 @@ footer#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .foo
 	font-size: 13.5px;
 	font-weight: 300;
     color: #ffffff99;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     transition: 0.4s;
 }
 
+#footer .footer-top a:last-child{
+	margin-bottom: 0;
+}
+
 #footer .footer-top a:hover{
-	color: var(--color);
+	color: white;
 }
 
 #contacts-footer p, #contacts-footer a {
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff99;
 }
 
 #footer .footer-bottom{
-	background-color: #111;
+	background-color: rgb(24 6 185 / 53%);
     padding: 1rem 5rem;
 }
 
@@ -775,6 +987,7 @@ footer#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .foo
 #footer .footer-bottom a i{ 
     margin-top: 9px;
     font-size: 15px;
+    transition: 0.3s;
 }
 
 #footer .footer-bottom a i.fa-facebook-f{
@@ -820,18 +1033,113 @@ footer#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .foo
 }
 
 
-
-
-#footer .arrow {
-    border: solid var(--color);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
+#footer i.arrow {
     margin-bottom: 1px;
     margin-right: 5px;
 }
 
+#footer .arrow {
+    border: solid #ffffff99;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
 
+/*--------------------------------------------------
+##contact us page
+---------------------------------------------------*/
+#breadcrumbs{
+    margin-top: 82px;
+    height: 5rem;
+    background-color: var(--color);
+}
+
+section#contact-page{
+    background-color: #f7f7f7;
+    padding: 3rem 5rem;
+}
+
+#contact-page .contact-info {
+    margin-bottom: 20px;
+}
+
+#contact-page .contact-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+#contact-page .contact-info .col-md-6:first-child{
+    padding-left: 0;
+}
+
+#contact-page .contact-info .col-md-3:last-child{
+    padding-right: 0;
+}
+
+.location, .phone, .email {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+}
+
+#contact-page .location i, #contact-page .phone i, #contact-page .email i {
+    font-size: 45px;
+    color: var(--color);
+    margin-bottom: 1rem;
+}
+
+#contact-page .contact-info .col-md-4 strong{
+    color: #2c4964;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+#contact-page .contact-info .col-md-4 p{
+    margin-bottom: 0;
+}
+
+
+/*Scroll to top button styling*/
+#topScrollBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--color); /* Set a background color */
+  color: white; /* Text color */
+  padding: 5px 15px; /* Some padding */
+  border-radius: 3px; /* Rounded corners */
+  transition: display, background-color 0.5s ease-in-out;
+}
+
+#topScrollBtn:hover {
+  background-color: var(--blue-hover); /* Add a dark-grey background on hover */
+}
+
+#topScrollBtn .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 0px; 
+    margin-right: 0px;
+}
+
+#topScrollBtn i {
+    margin-left: 1px;
+    margin-top: 11px;
+}
 
 
 
@@ -877,7 +1185,6 @@ footer#footer .footer-top .col-md-3, #footer .footer-top .col-md-4, #footer .foo
 	background-color: #3467eb !important;
 	border: 1px solid #3467eb !important;
 }
-
 
 
 
