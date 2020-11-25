@@ -201,7 +201,7 @@
 	    		</div>
 
 				<div class="row">
-    				<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+    				<div class="col-md-4 col-sm-6" data-aos="zoom-in-up" data-aos-delay="" data-aos-duration="2500">
     					<div class="about-card">
 	    					<div class="img">
 	    						<img src="assets/icons/speedometer.svg" alt="">
@@ -221,7 +221,7 @@
 								?></p>
     					</div>
     				</div>
-    				<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+    				<div class="col-md-4 col-sm-6" data-aos="zoom-in-up" data-aos-delay="" data-aos-duration="2500">
     					<div class="about-card">
 	    					<div class="img">
 	    						<img class="plan-icon" src="assets/icons/planning.svg" alt="">
@@ -241,7 +241,7 @@
 								?></p>
     					</div>
     				</div>
-    				<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+    				<div class="col-md-4 col-sm-6" data-aos="zoom-in-up" data-aos-delay="" data-aos-duration="2500">
     					<div class="about-card">
 	    					<div class="img">
 	    						<img src="assets/icons/binoculars.svg" alt="">
@@ -269,7 +269,7 @@
     	<section id="services">
     		<div class="container-fluid">
     			<div class="row">
-    				<div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
+    				<div class="col-md-12" data-aos="zoom-in" data-aos-duration="1000">
     					<div class="services-top">
     						<h2>What We Offer</h2>
 	    					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eligendi expedita architecto possimus dolor, labore, ducimus fugiat aliquam error. Est cum voluptates quis pariatur, sunt, eius mollitia nemo blanditiis labore quia?</p>
@@ -299,7 +299,7 @@
 				<div class="tab-content" id="servicesTabContent">
 				  <div class="tab-pane fade show active" id="industries" role="tabpanel" aria-labelledby="industries-tab">
 				  	<div class="row">
-				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="flip-left" data-aos-delay="100">
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
@@ -312,7 +312,7 @@
 					  			</div>
 				  			</a>
 				  		</div>
-				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="flip-left" data-aos-delay="200">
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
@@ -325,7 +325,7 @@
 					  			</div>
 				  			</a>
 				  		</div>
-				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="flip-left" data-aos-delay="300">
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
@@ -338,7 +338,7 @@
 					  			</div>
 				  			</a>
 				  		</div>
-				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="flip-left" data-aos-delay="100">
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
@@ -351,7 +351,7 @@
 					  			</div>
 				  			</a>
 				  		</div>
-				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="flip-left" data-aos-delay="200">
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
@@ -364,7 +364,7 @@
 					  			</div>
 				  			</a>
 				  		</div>
-				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+				  		<div class="col-lg-4 col-md-4 col-sm-6" data-aos="flip-left" data-aos-delay="300">
 				  			<a href="" class="services-link">
 					  			<div class="service-card">
 						  			<div class="top-section">
